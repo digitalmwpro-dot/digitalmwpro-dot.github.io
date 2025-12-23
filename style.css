@@ -1,77 +1,175 @@
-body {
+/* Reset some default styles */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #0a1a3a;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #0a1f44; /* Dark blue background */
   color: #ffffff;
+  line-height: 1.6;
+  min-height: 100vh;
 }
 
-nav {
-  background-color: #08102b;
-  padding: 12px 20px;
+/* Header & Navigation */
+header {
+  background-color: #061634;
+  padding: 15px 0;
 }
 
-nav a {
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
   color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-  margin-right: 18px;
-  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-nav a:hover {
-  opacity: 0.7;
+nav ul li a.active,
+nav ul li a:hover {
+  color: #1ec0ff;
 }
 
-.container {
-  padding: 30px 20px;
-  max-width: 600px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 28px;
-  margin-bottom: 15px;
-}
-
-input, textarea, button {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-}
-
-input, textarea {
-  background-color: #14234b;
-  color: #fff;
-}
-
-button {
-  background-color: #255dc1;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #1a4291;
-}
-
-a.button-link {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 15px;
-  background-color: #255dc1;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-a.button-link:hover {
-  background-color: #1a4291;
-}
-
-.ad-container {
+/* Main content */
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
   text-align: center;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Team members */
+.team-member {
+  margin: 30px 0;
+  padding: 15px;
+  background-color: #0c2a5a;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+}
+
+.team-member h2 {
+  color: #1ec0ff;
+}
+
+.team-member p {
+  color: #e0e0e0;
+  margin-top: 10px;
+}
+
+/* Forms */
+form {
+  background-color: #061634;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+form button {
+  background-color: #1ec0ff;
+  color: #0a1f44;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #13a0d3;
+}
+
+/* Footer */
+footer {
+  background-color: #061634;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #1ec0ff;
+  text-decoration: none;
+}
+
+/* WhatsApp Invite Funnel Buttons */
+.whatsapp-button {
+  display: inline-block;
+  background-color: #25d366;
+  color: #ffffff;
+  padding: 15px 25px;
   margin: 20px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .team-member img {
+    float: none;
+    display: block;
+    margin: 0 auto 15px auto;
+  }
+
+  .team-member {
+    text-align: center;
+  }
 }
