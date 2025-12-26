@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -125,20 +125,7 @@ form button:hover {
   background-color: #13a0d3;
 }
 
-/* Footer */
-footer {
-  background-color: #061634;
-  padding: 20px 0;
-  text-align: center;
-  margin-top: 30px;
-}
-
-footer a {
-  color: #1ec0ff;
-  text-decoration: none;
-}
-
-/* WhatsApp Invite Funnel Buttons */
+/* WhatsApp Invite Funnel Button */
 .whatsapp-button {
   display: inline-block;
   background-color: #25d366;
@@ -155,6 +142,25 @@ footer a {
 .whatsapp-button:hover {
   background-color: #1ebe5d;
   transform: scale(1.05);
+}
+
+/* Ad container styling */
+#ad-container-native {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #061634;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #1ec0ff;
+  text-decoration: none;
 }
 
 /* Responsive */
