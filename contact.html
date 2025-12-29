@@ -2,61 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Contact – Digital MW</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="google-adsense-account" content="ca-pub-3999059253357012">
-
-  <title>Contact Digital MW</title>
-  <meta name="description" content="Contact Digital MW for learning support, questions, and collaboration opportunities.">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <main>
-  <section class="contact-section">
-    <h1>Contact Us</h1>
+  <h1>Contact Us</h1>
 
-    <p>
-      If you are interested in joining our learning community or have questions,
-      please fill out the form below.
-    </p>
+  <form action="https://formspree.io/f/meeqadev" method="POST">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <textarea name="message" placeholder="Your message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 
-    <form action="https://formspree.io/f/meeqadev" method="POST">
-      <label>Full Name</label>
-      <input type="text" name="name" required>
-
-      <label>Email Address</label>
-      <input type="email" name="email" required>
-
-      <label>WhatsApp Number</label>
-      <input type="text" name="whatsapp" required>
-
-      <label>Why do you want to join?</label>
-      <textarea name="message" rows="4" required></textarea>
-
-      <button type="submit">Send Request</button>
-    </form>
-  </section>
+  <p>Email us directly:</p>
+  <p>
+    digitalmwpro@gmail.com<br>
+    info@digitalmwpro.com
+  </p>
 </main>
 
 <footer>
-  <p>© 2025 Digital MW. All rights reserved.</p>
-  <p>
-    <a href="mailto:digitalmwpro@gmail.com">digitalmwpro@gmail.com</a> |
-    <a href="mailto:info@digitalmwpro.com">info@digitalmwpro.com</a>
-  </p>
-  <p><a href="sitemap.xml">Sitemap</a></p>
+  <p>© 2025 Digital MW</p>
+  <a href="privacy.html">Privacy Policy</a> |
+  <a href="terms.html">Terms & Conditions</a> |
+  <a href="sitemap.xml">Sitemap</a>
 </footer>
 
 </body>
