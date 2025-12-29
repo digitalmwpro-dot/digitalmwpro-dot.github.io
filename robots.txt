@@ -1,0 +1,6 @@
+# robots.txt for https://digitalmwpro-dot.github.io/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://digitalmwpro-dot.github.io/sitemap.xml
